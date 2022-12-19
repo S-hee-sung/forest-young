@@ -1,0 +1,53 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-decoration: none;
+}
+
+
+
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  /* background-color: beige; */
+
+  z-index: 9;
+}
+header .img-size {
+  width: 200px;
+  height: auto;
+}
+header .main-menu {
+  display: flex;
+  padding-top: 35px;
+  gap:50px;
+  font-size: 24px;
+  font-weight: 700;
+}
+header .main-menu:hover .sub-menu{
+  transition: all .5s .5s;
+}
+header .main-menu li {
+  position: relative;
+}
+header .sns > ul {
+  display: flex;
+}
+header .sns > ul > li > a > img{
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+header .sub-menu {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
