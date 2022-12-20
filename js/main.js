@@ -23,9 +23,9 @@ headEl.addEventListener('mouseleave', function () {
 new Swiper('.slider .swiper', {
   direction: 'horizontal', 
   loop: true, 
-  autoplay: true,     
-  navigation: { 
-    nextEl: '.slider .swiper-button-next',
-    prevEl: '.slider .swiper-button-prev',
-    },
+  autoplay: true,
+  pagination: {
+    el: '.slider .swiper-pagination',
+    clickable: true,
+  },    
 });
