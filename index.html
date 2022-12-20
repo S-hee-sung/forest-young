@@ -14,8 +14,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
   
+  <!-- 머티리얼 아이콘 연결 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+
+  <!-- Swiper.js 연결하기 -->
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
+
 
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
@@ -105,5 +114,35 @@
       </ul>
     </div>
   </header>
+  
+  <!-- SLIDER -->
+  <section class="slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/sector_image4.jpg" alt="start" class="slider-img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/sector_image3.jpg" alt="twice" class="slider-img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/sector_image1.jpg" alt="third" class="slider-img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/sector_image5.jpg" alt="end" class="slider-img">
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev">
+          <span class="material-icons">arrow_back</span>
+        </div>
+        
+        <div class="swiper-button-next">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+      </div>
+  </section>
+
 </body>
 </html>

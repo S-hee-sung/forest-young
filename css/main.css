@@ -2,10 +2,11 @@
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
-  text-decoration: none;
 }
-
-
+a {
+  text-decoration: none;
+  display: block;
+}
 
 
 /* HEADER */
@@ -15,8 +16,8 @@ header {
   width: 100%;
   height: 100px;
   /* background-color: beige; */
-
-  z-index: 9;
+  transition: height .5s;
+  z-index: 1;
 }
 header .img-size {
   width: 200px;
@@ -25,29 +26,88 @@ header .img-size {
 header .main-menu {
   display: flex;
   padding-top: 35px;
-  gap:50px;
-  font-size: 24px;
-  font-weight: 700;
+  gap: 100px;
 }
-header .main-menu:hover .sub-menu{
-  transition: all .5s .5s;
+header .main-menu:hover .sub-menu {
+  transition: all .5s .5s; 
 }
-header .main-menu li {
+header .main-menu > li {
   position: relative;
+}
+header .main-menu > li > a{
+  font-size: 15px;
+}
+header .main-menu > li:hover > a{
+  color: aqua;
+  border-bottom: 2px solid red;
+}
+header .main-menu li:hover > .sub-menu {
+  display: block;
 }
 header .sns > ul {
   display: flex;
 }
 header .sns > ul > li > a > img{
-  width: 70px;
-  height: 70px;
-  margin: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 30px 20px;
 }
-
 header .sub-menu {
   position: absolute;
-  width: 100%;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
+  text-align: center;
+  width: 100%;
+}
+header .sub-menu > li  {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .sub-menu > li > a {
+  padding: 10px 0px;
+  font-size: 20px;
+  color: #999;
+}
+header .sub-menu > li > a:hover {
+  color: aquamarine;
+}
+
+header .drop-menu {
+  display: none;
+}
+
+/* SLIDER */
+.slider {
+  height: 800px;
+}
+.slider .slider-img {
+  width: 100%;
+  height: 800px;
+}
+.slider .swiper {
+  flex-shrink: 0;
+  width: 100%;
+  height: 800px;
+}
+.slider .swiper-button-next,
+.slider .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  z-index: 1;
+  color: aquamarine;
+}
+.slider .swiper-button-prev:hover,
+.slider .swiper-button-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  display: none;
 }
