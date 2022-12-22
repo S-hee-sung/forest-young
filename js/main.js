@@ -53,3 +53,24 @@ new Swiper('.swiper_3', {
     delay: 3000,
   }
 });
+
+const totopEl = document.querySelector('#to-top');
+totopEl.addEventListener('click',function () {
+  gsap.to(window,0.6,{
+    scrollTo: 0 
+  });
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 500) {
+    gsap.to(totopEl, 0.6, {
+      opacity:1,
+      x: 0
+    });
+  } else {
+    gsap.to(totopEl, 0.6, {
+      opacity: 0,
+      x: 100 
+    });
+  }
+});  
