@@ -49,8 +49,22 @@ header .main-menu > li:hover > a{
 header .main-menu li:hover > .sub-menu {
   display: block;
 }
+header .sns {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
 header .sns > ul {
   display: flex;
+}
+header .menu-icon  {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  transform: translateY(-50%);
 }
 header .sns > ul > li > a > img{
   width: 40px;
@@ -251,6 +265,13 @@ header .drop-menu > li > a:hover {
   display: flex;
   outline: none;
 }
+.gallery > .inner > .gallery-tab > .gallery-keyword > a > input{
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+
 .gallery > .inner > .gallery-tab > .gallery-keyword .material-icons{
   position: absolute;
   top: 8px;
@@ -530,4 +551,52 @@ footer .page .foot-top .foot-list > li > ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    
+    .slider .slider-text > h3 {
+      font-size: 24px;
+    }
+    .slider .slider-text > span {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    header .sns > ul > li > a > img{
+      display: none;
+    }
+    header .menu-icon {
+      display: block;
+    }
+    .gallery .inner .gallery-tab {
+      display: none;
+    }
+    .gallery .box-img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media screen and (min-width: 1023px) and (max-width: 1270px) {
+    
+    header .main-menu {
+      display: none;
+    } 
+    header .sns > ul > li > a > img{
+      display: none;
+    }
+    header .menu-icon {
+      display: block;
+    }
+    /* .quick .inner {
+      width: 50%;
+    } */
+    .gallery .box-img {
+      width: 250px;
+      height: 200px;
+    }
+    
   }
