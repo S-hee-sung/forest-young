@@ -43,10 +43,11 @@ header .main-menu > li > a {
   font-size: 15px;
   padding: 0 50px;
   line-height: 100px;
+  color: #333;
 }
 header .main-menu > li:hover > a{
-  color: aqua;
-  border-bottom: 2px solid red;
+  color: #e0a43c;
+  border-bottom: 2px solid #e0a43c;
 }
 header .main-menu li:hover > .sub-menu {
   display: block;
@@ -86,9 +87,10 @@ header .drop-menu {
 header .sub-menu > li > a {
   font-size: 20px;
   color: #999;
+  padding-top: 10px;
 }
 header .sub-menu > li > a:hover {
-  color: aquamarine;
+  color: #e0a43c;
 }
 header .drop-menu {
   display: none;
@@ -100,15 +102,16 @@ header .drop-menu {
   width: 100px;
 }
 header .drop-menu > li  {
-  border: 2px solid #333;
-  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
 }
 header .drop-menu > li > a {
   font-size: 20px;
-  color: #999;
+  color: #333;
 }
 header .drop-menu > li > a:hover {
-  color: aquamarine;
+  color: #e0a43c;
 }
 
 /* SLIDER */
@@ -177,7 +180,10 @@ header .drop-menu > li > a:hover {
   text-align: center;
 }
 .quick .quick-menu > li > a {
-  margin: 20px 0 30px;
+  margin: 20px 0 10px;
+}
+.quick .quick-menu > li > a > p {
+  margin-top: 20px;
 }
 
 /* Gallery */
@@ -211,6 +217,11 @@ header .drop-menu > li > a:hover {
 .gallery > .inner > .gallery-tab > ul > li {
   margin: 0 20px;
 } 
+.gallery > .inner > .gallery-tab > ul > li > a {
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+}
 .gallery > .inner > .gallery-tab > ul > li::before {
   content: "";
   width: 1px;
@@ -253,6 +264,10 @@ header .drop-menu > li > a:hover {
   height: 250px;
   border: #333 solid 2px;
   margin-top: 40px;
+  cursor: pointer;
+}
+.gallery .box-img:hover {
+  border: 1px solid #777;
 }
 .gallery .btn-box {
   position: absolute;
@@ -270,8 +285,8 @@ header .drop-menu > li > a:hover {
   cursor: pointer;
 }
 .gallery .btn:hover {
-  color: #ea29ea;
-  background-color: antiquewhite;
+  color: rgb(194, 150, 150);
+  background-color: #fff;
 }
 
 /* YOUTUBE */
@@ -443,6 +458,7 @@ footer .page .foot-top .foot-list > li > ul > li {
     border: 1px solid #333;
     border-radius: 4px;
     width: 120px;
+    color: #333;
   }
   footer .page .foot-top .foot-list .service-box .service-list > li:hover {
     color: #333;
@@ -452,6 +468,7 @@ footer .page .foot-top .foot-list > li > ul > li {
     border: 1px solid #333;
     border-radius: 4px;
     width: 120px;
+    color: #333;
   }
 
   footer .foot-bottom {
