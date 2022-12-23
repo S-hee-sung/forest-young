@@ -243,7 +243,7 @@ header .drop-menu > li > a:hover {
   content: "";
   width: 1px;
   height: 10px;
-  background-color: #e5e5e5;
+  background-color: #e0a43c;
 
   position: absolute;
   top: 0;
@@ -281,7 +281,6 @@ header .drop-menu > li > a:hover {
 .gallery > .img-box {
   width: 25%;
   display: flex;
-  flex-wrap: nowrap;
 }
 .gallery .box-img {
   width: 250px;
@@ -290,6 +289,7 @@ header .drop-menu > li > a:hover {
   border-radius: 8px;
   margin-top: 40px;
   cursor: pointer;
+  max-width: 100%;
 }
 .gallery .box-img:hover {
   border: 1px solid #777;
@@ -340,11 +340,11 @@ header .drop-menu > li > a:hover {
 /* NOtice */
 .notice {
   padding: 80px 0 80px;
-  /* position: relative; */
   height: 100%;
   background-image: url(../images/visual_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .notice .inner {
   width: 1600px;
@@ -423,6 +423,9 @@ header .drop-menu > li > a:hover {
 footer {
   padding: 50px 0 35px;
   background-color: #e4ebf3;
+  min-width: 450px;
+  max-width: 100%;
+  height: auto;
 
 }
 footer .page .foot-top .foot-list {
@@ -555,33 +558,117 @@ footer .page .foot-top .foot-list > li > ul > li {
 
   @media screen and (max-width: 767px) {
     
+    /* SLIDER */
     .slider .slider-text > h3 {
       font-size: 24px;
     }
     .slider .slider-text > span {
       font-size: 12px;
     }
+    
+
+    /* GALLERY */
+    .gallery .inner .gallery-tab {
+      display: none;
+    }
+    .gallery .btn {
+      width: 120px;
+      height: 100px;
+      line-height: 40px;
+    }
+
+    /* YOUTUBE */
+    .youtube .youtube-main {
+      width: 500px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .youtube .mountain-video > iframe {
+      width: 400px;
+      height: 400px;
+    }
+
+    /* NOTICE */
+    .notice .swiper-center {
+      flex-direction: column;
+    }  
+
   }
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     
+    /* HEADER */
     header .sns > ul > li > a > img{
       display: none;
     }
     header .menu-icon {
       display: block;
     }
+
+    /* QUICK */
+    .quick .inner {
+      width: 500px;
+      margin: 0 auto;
+      height: 80px;
+    }
+    .quick .quick-menu > li > a {
+      padding: 0 10px;
+    }
+
+    /* GALLERY */
     .gallery .inner .gallery-tab {
       display: none;
     }
     .gallery .box-img {
-      width: 150px;
-      height: 150px;
+      width: 300px;
+      height: 100px;
+      flex-direction: column;
+    }
+
+    /* YOUTUBE */
+    .youtube .youtube-main {
+      width: 767px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+
+  @media screen and (min-width: 1023px) and (max-width: 1270px)  {
+    
+    /* GALLERY */
+    .gallery .box-img {
+      width: 20%;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    /* YOUTUBE */
+    .youtube .youtube-main {
+      width: 1260px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* NOTICE */
+    .notice .swiper-center {
+      flex-direction: column;
+    }  
+    
+    .notice .swiper-list {
+      margin-top: 80px;
     }
   }
 
-  @media screen and (min-width: 1023px) and (max-width: 1270px) {
+
+
+  @media screen and (max-width: 1270px) {
     
+    /* HEADER */
     header .main-menu {
       display: none;
     } 
@@ -591,12 +678,42 @@ footer .page .foot-top .foot-list > li > ul > li {
     header .menu-icon {
       display: block;
     }
-    /* .quick .inner {
-      width: 50%;
-    } */
+    
+    /* QUICK */
+    .quick .inner {
+      width: 900px;
+      margin: 0 auto;
+      height: 80px;
+    }
+    .quick .quick-menu > li > a {
+      padding: 0 20px;
+    }
+
+    /* GALLERY */
+    .gallery .img-box {
+      width: 800px;
+      flex-wrap: wrap;
+    }
     .gallery .box-img {
-      width: 250px;
+      width: 200px;
       height: 200px;
     }
-    
+    .gallery .btn-box {
+      position: absolute;
+      bottom: 50px;
+      left: 40%;
+    }
+
+    /* YOUTUBE */
+    .youtube .you-img {
+      display: none;
+    }
+
+    /* FOOTER */
+    footer .page .foot-top .foot-list {
+      flex-direction: column;
+    }
+    footer .page .foot-top .foot-list li {
+      margin-top: 30px;
+    }    
   }
