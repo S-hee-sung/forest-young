@@ -264,16 +264,18 @@ header .drop-menu > li > a:hover {
   display: flex;
   outline: none;
 }
-.gallery > .inner > .gallery-tab > .gallery-keyword > a > input{
+.gallery > .inner > .gallery-tab > .gallery-keyword > input {
   outline: none;
   border: 1px solid #333;
   border-radius: 8px;
 }
-
+.gallery > .inner > .gallery-tab > .gallery-keyword > label {
+  display: none;
+}
 
 .gallery > .inner > .gallery-tab > .gallery-keyword .material-icons{
   position: absolute;
-  top: 8px;
+  top: 0;
   right: 0;
   
 }
