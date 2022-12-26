@@ -57,8 +57,10 @@ header .sns {
 header .sns > ul {
   display: flex;
 }
-header .menu-icon  {
+header > a {
   display: none;
+}
+header .menu-icon  {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -647,7 +649,7 @@ footer .page .foot-top .foot-list > li > ul > li {
     header .sns > ul > li > a > img{
       display: none;
     }
-    header .menu-icon {
+    header > a {
       display: block;
     }
 
@@ -667,7 +669,7 @@ footer .page .foot-top .foot-list > li > ul > li {
       display: none;
     }
     .gallery .img-box {
-      width: 60%;
+      width: 70%;
     }
     .gallery .box-img {
       width: 200px;
@@ -691,7 +693,7 @@ footer .page .foot-top .foot-list > li > ul > li {
     /* NOTICE */
     .notice .swiper-center {
       flex-direction: column;
-      width: 800px;
+      width: 40%;
     }
     .notice .swiper-list {
       display: none;
@@ -716,6 +718,11 @@ footer .page .foot-top .foot-list > li > ul > li {
     }
     header .main-menu li:nth-child(5) {
       display: none;
+    }
+    header .drop-menu {
+      position: absolute;
+      left: 10px;
+      top: 50px;
     }
 
     /* QUICK */
@@ -744,6 +751,7 @@ footer .page .foot-top .foot-list > li > ul > li {
       width: 80%;
       flex-wrap: wrap;
       padding: 20px 70px;
+      margin: 0 auto;
     }
     .gallery .btn-box {
       display: none;
@@ -768,6 +776,14 @@ footer .page .foot-top .foot-list > li > ul > li {
     }
     .notice .swiper-list {
       margin-top: 80px;
+      width: 50%;
+    }
+    .notice .swiper_3{
+      width: 50%;
+    }
+    .notice .swiper-_3 .swiper-pagination {
+      position: absolute;
+      right: 700px;
     }
 
     /* QUICK */
