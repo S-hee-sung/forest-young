@@ -8,7 +8,6 @@ a {
   display: block;
 }
 
-
 /* HEADER */
 header {
   display: flex;
@@ -48,12 +47,6 @@ header .main-menu > li:hover > a{
 header .main-menu > li:hover > .sub-menu {
   display: block;
 }
-header .sns > ul {
-  display: flex;
-}
-header > a {
-  display: none;
-}
 header .menu-icon  {
   position: absolute;
   top: 50%;
@@ -61,6 +54,12 @@ header .menu-icon  {
   width: 80px;
   height: 80px;
   transform: translateY(-50%);
+}
+header .sns > ul {
+  display: flex;
+}
+header > a {
+  display: none;
 }
 header .sns > ul > li > a > img{
   width: 40px;
@@ -725,6 +724,7 @@ footer .page .foot-top .foot-list > li > ul > li {
       left: 10px;
       top: 50px;
     }
+
 
     /* QUICK */
     .quick-menu li {
