@@ -3,7 +3,7 @@ const mainMenuEl = document.querySelector('.main-menu');
 const subMenuEl = document.querySelectorAll('.sub-menu')
 
 mainMenuEl.addEventListener('mouseover', function () {
-  headEl.style.height = '400px';
+  headEl.style.height = '300px';
 
 subMenuEl.forEach(function (subMenuEl) {
     subMenuEl.style.opacity = '1'   
